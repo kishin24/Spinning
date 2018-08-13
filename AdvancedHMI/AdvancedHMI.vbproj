@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{13A180B0-1183-4CB7-AC14-BF98320A30E4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MfgControl.AdvancedHMI.My.MyApplication</StartupObject>
+    <RootNamespace>MfgControl.AdvancedHMI</RootNamespace>
+    <AssemblyName>Structure Supported</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Users\ealvaren\source\repos\Spiral\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Structure Supported.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>BasicDesignGuidelineRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Structure Supported.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>Migrated rules for AdvancedHMI.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\intralox_l9x_11.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>54D1B58917FD6A14EB237DA63FE7D26F0F925899</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>AdvancedHMI_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Devart.Data, Version=5.0.1964.0, Culture=neutral, PublicKeyToken=09af7300eec23701" />
+    <Reference Include="Devart.Data.SQLite, Version=5.11.1172.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="MfgControl.AdvancedHMI.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AdvancedHMIControls\support\MfgControl.AdvancedHMI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="MfgControl.AdvancedHMI.Drivers, Version=3.99.19.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\AdvancedHMIDrivers\Support\MfgControl.AdvancedHMI.Drivers.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.Designer">
+      <HintPath>..\..\..\Downloads\sqlite-netFx40-binary-x64-2010-1.0.108.0\SQLite.Designer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.SQLite, Version=1.0.98.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\SQLite.NET\bin\System.Data.SQLite.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Classes\ApplicationConstants.vb" />
+    <Compile Include="Classes\EventClass.vb" />
+    <Compile Include="Classes\IniFile.vb" />
+    <Compile Include="Classes\UserLogin.vb" />
+    <Compile Include="Classes\Notifications_Manager.vb" />
+    <Compile Include="Classes\Security.vb" />
+    <Compile Include="Displays\aaMain.Designer.vb">
+      <DependentUpon>aaMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\aaMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\A_Main.Designer.vb">
+      <DependentUpon>A_Main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\A_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\BSetup.Designer.vb">
+      <DependentUpon>BSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\BSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\Popups\LogIn.Designer.vb">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\Popups\LogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\Popups\PPABB.Designer.vb">
+      <DependentUpon>PPABB.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\Popups\PPABB.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\Popups\PPIntraloxData.Designer.vb">
+      <DependentUpon>PPIntraloxData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\Popups\PPIntraloxData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\Popups\PPCalendar.Designer.vb">
+      <DependentUpon>PPCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\Popups\PPCalendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\Popups\PPJogDrum.Designer.vb">
+      <DependentUpon>PPJogDrum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\Popups\PPJogDrum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\Popups\PPJogTU.Designer.vb">
+      <DependentUpon>PPJogTU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\Popups\PPJogTU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\Popups\PPPF70.Designer.vb">
+      <DependentUpon>PPPF70.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\Popups\PPPF70.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\Popups\PPSchematics.Designer.vb">
+      <DependentUpon>PPSchematics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\Popups\PPSchematics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\Popups\PPSensorCloud.Designer.vb">
+      <DependentUpon>PPSensorCloud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\Popups\PPSensorCloud.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\Popups\PPTCS.Designer.vb">
+      <DependentUpon>PPTCS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\Popups\PPTCS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\Globals.vb" />
+    <Compile Include="Displays\CTools.Designer.vb">
+      <DependentUpon>CTools.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\CTools.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\DAlarms.Designer.vb">
+      <DependentUpon>DAlarms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\DAlarms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\Popups\PPTestComplete.Designer.vb">
+      <DependentUpon>PPTestComplete.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\Popups\PPTestComplete.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\Popups\Splash1.Designer.vb">
+      <DependentUpon>Splash1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\Popups\Splash1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\Popups\Test_trial.Designer.vb">
+      <DependentUpon>Test_trial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\Popups\Test_trial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangeControls\FormChangeButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormChangeControls\FormChangeImage.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormChangeControls\MainMenuDriven\MainMenu.designer.vb">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormChangeControls\MainMenuDriven\MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChangeControls\MainMenuDriven\MainMenuButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Displays\XAbout.Designer.vb">
+      <DependentUpon>XAbout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\XAbout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Displays\YHelp.Designer.vb">
+      <DependentUpon>YHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\YHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Displays\aaMain.resx">
+      <DependentUpon>aaMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\A_Main.af.resx">
+      <DependentUpon>A_Main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\A_Main.resx">
+      <DependentUpon>A_Main.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\BSetup.resx">
+      <DependentUpon>BSetup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\CTools.resx">
+      <DependentUpon>CTools.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\DAlarms.resx">
+      <DependentUpon>DAlarms.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\Popups\LogIn.resx">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\Popups\PPABB.resx">
+      <DependentUpon>PPABB.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\Popups\PPCalendar.resx">
+      <DependentUpon>PPCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\Popups\PPIntraloxData.resx">
+      <DependentUpon>PPIntraloxData.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\Popups\PPJogDrum.resx">
+      <DependentUpon>PPJogDrum.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\Popups\PPJogTU.resx">
+      <DependentUpon>PPJogTU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\Popups\PPPF70.resx">
+      <DependentUpon>PPPF70.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\Popups\PPSchematics.resx">
+      <DependentUpon>PPSchematics.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\Popups\PPSensorCloud.resx">
+      <DependentUpon>PPSensorCloud.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\Popups\PPTCS.resx">
+      <DependentUpon>PPTCS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\Popups\PPTestComplete.resx">
+      <DependentUpon>PPTestComplete.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\Popups\Splash1.resx">
+      <DependentUpon>Splash1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\Popups\Test_trial.resx">
+      <DependentUpon>Test_trial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChangeControls\MainMenuDriven\MainMenu.resx">
+      <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\XAbout.resx">
+      <DependentUpon>XAbout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Displays\YHelp.resx">
+      <DependentUpon>YHelp.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AdvancedHMI_TemporaryKey.pfx" />
+    <None Include="app.config" />
+    <None Include="Data\App_Config.ini" />
+    <None Include="Documents\OpcDaComUage.pdf" />
+    <None Include="SampleINIfiles\CLX.ini" />
+    <None Include="SampleINIfiles\TC.ini" />
+    <None Include="Documents\ICommComponentInterface.pdf" />
+    <None Include="Documents\MatrikonSimulator.pdf" />
+    <None Include="Documents\MotorControlAppMicroLogix.pdf" />
+    <None Include="Documents\QuickStart.pdf" />
+    <None Include="Documents\TwinCATDriverSetting.pdf" />
+    <None Include="Documents\UsingAdvancedHMIwithRSLogixEmulator500.pdf" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="QuickStart.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Alarms.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="icons\AHMI00.ico" />
+    <Content Include="icons\AHMI01.ico" />
+    <Content Include="icons\AHMI03.ico" />
+    <Content Include="icons\AHMI04.ico" />
+    <Content Include="icons\AHMI09.ico" />
+    <Content Include="icons\AHMI11.ico" />
+    <Content Include="icons\AHMI13.ico" />
+    <Content Include="icons\AHMI14.ico" />
+    <Content Include="icons\AHMI32x32-1.ico" />
+    <Content Include="icons\AHMI32x32-2.ico" />
+    <Content Include="icons\AHMI32x32-3.ico" />
+    <Content Include="icons\AHMI32x32-4.ico" />
+    <Content Include="icons\Credit.txt" />
+    <None Include="Resources\intralox1.bmp" />
+    <None Include="Resources\Intraloxbrochurecvr.jpg" />
+    <None Include="Resources\home-icon.png" />
+    <None Include="Resources\AlarmIcon_64x64.png" />
+    <None Include="Resources\WrenchIcon_64x64.png" />
+    <None Include="Resources\GearIcon_64x64.png" />
+    <None Include="Resources\PartsBoat.png" />
+    <None Include="Resources\intralox2.bmp" />
+    <None Include="Resources\alarm.png" />
+    <None Include="Resources\alarm1.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\download1.png" />
+    <None Include="Resources\intralox_l9x_11.ico" />
+    <None Include="Resources\Intralox-brochurecvr.jpg" />
+    <Content Include="SampleINIfiles\Alarms.txt" />
+    <Content Include="ReadMe.txt" />
+    <Content Include="ReleaseNotes399.txt" />
+    <None Include="Resources\AdvancedHMILogoBR.png" />
+    <Content Include="TestSteps.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UsageAndLicense.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Office">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdvancedHMIControls\AdvancedHMIControls.vbproj">
+      <Project>{928F9169-93D6-4E5F-8130-C8B1F4D3CC6E}</Project>
+      <Name>AdvancedHMIControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AdvancedHMIDrivers\AdvancedHMIDrivers.vbproj">
+      <Project>{1C35364C-105A-4537-9CA1-0FB0DC656944}</Project>
+      <Name>AdvancedHMIDrivers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

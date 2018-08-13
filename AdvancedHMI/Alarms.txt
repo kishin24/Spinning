@@ -1,0 +1,16 @@
+﻿700,Drum VFD Fault ,Yellow,Black
+701,Takeup VFD Fault,Red,White
+702,Drum VFD Overload
+703,Takeup VFD Overload
+704,Reverse Start Attempt Fault
+705,Left Tension Sensor Fault
+706, Right Tension Sensor Fault
+707, Upper Limit Switch Fault
+708, Lower Limit Switch Fault
+709, Belt Flip Up Fault
+710, Spiral Destack Fault
+777, Fault! Safety Relay Fault
+503, Product Height Sensor
+504, Fault! Estop Pressed or not Reset.
+805, Estop Pushed or not Reset! 
+806, Pull Cord Fault. 
